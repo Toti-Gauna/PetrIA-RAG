@@ -1,0 +1,32 @@
+# Secrets: never commit. Only .env.example is allowed.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+dist/
+*.egg-info/
+
+# Data and model artifacts (large, reproducible, never committed)
+data/
+artifacts/
+*.parquet
+*.pkl
