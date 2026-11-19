@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Language ecosystems are added when each repo gets its first dependencies.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    # Wait 7 days before proposing a brand-new release: a malicious version is
+    # usually detected and removed within days.
+    cooldown:
+      default-days: 7
