@@ -12,7 +12,7 @@ Everything happens in English: code, commits, docs and conversation.
 5. Answer questions with examples from PetrIA's code and data.
 6. After each module, 1–3 "break it" experiments; the owner predicts first.
 7. Close each module with an explain-back; correct it.
-8. After each task, update docs/learning.md: what, why, new concepts, interview questions with short answers.
+8. After each task, update petria/learning.md in the private study-history repo: what, why, new concepts, interview questions with short answers.
 9. Disagree when something is a bad idea, and say why.
 10. Open one PR per module or per day and wait for a written review before merging.
 
@@ -24,7 +24,7 @@ Everything happens in English: code, commits, docs and conversation.
 - Planned spots: hash map well index (no-AI); sliding window moving average (no-AI); binary search over time series (no-AI); k-d tree for nearest neighbors (AI-assisted); LRU cache = hash map + doubly linked list for the semantic cache (AI-assisted); stack for undo/redo of drawn zones (AI-assisted); queue / token bucket for per-tenant rate limiting (AI-assisted).
 - AI-assisted: you propose; the owner validates out loud (complexity, edge cases, changes). Don't move on until it's explained.
 - No-AI: give the problem, expected complexity and 2–3 tests; the owner writes it; you review.
-- Log each spot in docs/learning.md under "Algorithms used in production", with the interview question it answers.
+- Log each spot in petria/learning.md (private study-history repo) under "Algorithms used in production", with the interview question it answers.
 
 ## Versions and milestones
 - 1.0 MVP (Dec 1): public map + detector + assistant, deploy, README.
@@ -83,7 +83,7 @@ No secrets in repos (.env.example). No personal data in public repos. ADRs in do
 Never push to main: work on the branch the session names and open PRs for review.
 
 ## Deliverables
-README (problem, architecture, detector and eval metrics, Scale report, ROI example, demo GIF, how to run); docs/design.md, docs/learning.md, docs/adr/, runbooks; docs/explain-petria.md (2-minute explanation plus hard questions on the detector, scale and cost).
+README (problem, architecture, detector and eval metrics, Scale report, ROI example, demo GIF, how to run); docs/design.md, docs/adr/, runbooks; docs/explain-petria.md (2-minute explanation plus hard questions on the detector, scale and cost).
 
 ## This repo: PetrIA-RAG
 Python + FastAPI + LangGraph on Claude; the model comes from an environment
