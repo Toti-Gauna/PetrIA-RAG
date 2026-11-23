@@ -9,3 +9,10 @@ updates:
     # usually detected and removed within days.
     cooldown:
       default-days: 7
+  # Base images: proposed as pull requests, never moved silently.
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
